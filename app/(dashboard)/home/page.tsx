@@ -9,8 +9,8 @@ const HomePage = () => {
     <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
       <div className="space-y-6">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">Welcome back</h1>
-          <p className="text-muted-foreground mt-2">Explore your dashboard and manage your content</p>
+          <h1 className="text-3xl font-bold tracking-tight">Your Learning Dashboard</h1>
+          <p className="text-muted-foreground mt-2">Continue your learning journey and discover new courses</p>
         </div>
         <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {categoryList.map((category: Category) => (
