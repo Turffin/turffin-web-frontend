@@ -158,7 +158,7 @@ export function DashboardHeader() {
                 <Button variant="ghost" className="relative h-10 w-10 rounded-xl hover:bg-gray-100 p-0">
                   <Avatar className="h-10 w-10 ring-2 ring-gray-200">
                     <AvatarImage src={user?.avatar || undefined} alt={user?.name} />
-                    <AvatarFallback className="bg-gradient-to-br from-blue-500 to-purple-600 text-white font-semibold">
+                    <AvatarFallback className="bg-gradient-to-br from-green-500 to-teal-600 text-white font-semibold">
                       {user?.name ? user.name.charAt(0).toUpperCase() : 'U'}
                     </AvatarFallback>
                   </Avatar>

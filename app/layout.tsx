@@ -31,9 +31,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          <AuthGuard>
+          {/* <AuthGuard> */}
             {children}
-          </AuthGuard>
+          {/* </AuthGuard> */}
           <Toaster position="top-right" />
         </Providers>
       </body>

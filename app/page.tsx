@@ -1,27 +1,9 @@
 'use client'
-import { Header } from "@/components/landing/header";
-import { Hero } from "@/components/landing/hero";
-import { Features } from "@/components/landing/features";
-import { Instructors } from "@/components/landing/instructors";
-import { LearningOutcomes } from "@/components/landing/learning-outcomes";
-import { Pricing } from "@/components/landing/pricing";
-import { Testimonials } from "@/components/landing/testimonials";
-import { FAQ } from "@/components/landing/faq";
-import { FinalCTA } from "@/components/landing/final-cta";
-import { Footer } from "@/components/landing/footer";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
-      <Header />
-      <Hero />
-      <Features />
-      <Instructors />
-      <LearningOutcomes />
-      <Pricing />
-      <Testimonials />
-      <FAQ />
-      <FinalCTA />
-      <Footer />
+       hello world
     </main>
   );
 }
