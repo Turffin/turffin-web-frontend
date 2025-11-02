@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lumeeni Web",
-  description: "Lumeeni Web is a platform for learning and teaching web development",
+  title: "Turffin",
+  description: "Turffin",
 };
 
 export default function RootLayout({
