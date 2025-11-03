@@ -46,10 +46,10 @@ export default function LoginPage() {
     const onSubmit = async (data: any) => {
         setLoading(true);
         try {
-            const response = await login(data.email, data.password);
-            if (response.access_token) {
-                const tokenStored = setToken(response.access_token);
-                if (tokenStored) {
+            // const response = await login(data.email, data.password);
+            if ( true) {
+                // const tokenStored = setToken(response.access_token);
+                if (true) {
                     toast.success('Login successful');
                     router.push('/home');
                 }

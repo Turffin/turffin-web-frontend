@@ -1,5 +1,7 @@
 export interface AuthResponse {
     success: boolean,
     message: string,
-    data: {}
+    data: {
+        access_token: string,
+    }
 }

@@ -81,7 +81,7 @@ export default function SignupPage() {
                     {...register("name")}
                     className={cn("border", errors.name && "border-destructive")}
                   />
-                  {errors?.name && <FieldDescription className="text-start text-destructive" aria-live="polite">{errors?.name?.message}</FieldDescription>}
+                  {errors?.name && <FieldDescription className="text-start text-destructive" aria-live="polite">{errors.name.message as string}</FieldDescription>}
                 </Field>
                 <Field>
                   <FieldLabel htmlFor="email">Email</FieldLabel>
@@ -93,7 +93,7 @@ export default function SignupPage() {
                     {...register("email")}
                     className={cn("border", errors.email && "border-destructive")}
                   />
-                  {errors?.email && <FieldDescription className="text-start text-destructive" aria-live="polite">{errors?.email?.message}</FieldDescription>}
+                  {errors?.email && <FieldDescription className="text-start text-destructive" aria-live="polite">{errors.email.message as string}</FieldDescription>}
                 </Field>
 
                 <Field>
@@ -106,7 +106,7 @@ export default function SignupPage() {
                     {...register("password")}
                     className={cn("border", errors.password && "border-destructive")}
                   />
-                  {errors?.password && <FieldDescription className="text-start text-destructive" aria-live="polite">{errors?.password?.message}</FieldDescription>}
+                  {errors?.password && <FieldDescription className="text-start text-destructive" aria-live="polite">{errors.password.message as string}</FieldDescription>}
                 </Field>
 
                 <Field>
@@ -119,7 +119,7 @@ export default function SignupPage() {
                     {...register("confirmPassword")}
                     className={cn("border", errors.confirmPassword && "border-destructive")}
                   />
-                  {errors?.confirmPassword && <FieldDescription className="text-start text-destructive" aria-live="polite">{errors?.confirmPassword?.message}</FieldDescription>}
+                  {errors?.confirmPassword && <FieldDescription className="text-start text-destructive" aria-live="polite">{errors.confirmPassword.message as string}</FieldDescription>}
                 </Field>
 
                 <Field>

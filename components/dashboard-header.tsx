@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Breadcrumb } from '@/types/breadcrumbType'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -44,15 +45,16 @@ export function DashboardHeader() {
   }
 
   // Generate breadcrumbs from pathname
-  const generateBreadcrumbs = () => {
+  const generateBreadcrumbs = (): Breadcrumb[] => {
     const segments = pathname.split('/').filter(Boolean)
-    const breadcrumbs = []
+    const breadcrumbs: Breadcrumb[] = []
     
     // Always start with Home
     breadcrumbs.push({
       label: 'Home',
       href: '/home',
-      icon: Home
+      icon: Home,
+      isLast: segments.length === 0
     })
     
     // Add other segments
@@ -64,7 +66,7 @@ export function DashboardHeader() {
         label,
         href,
         isLast: index === segments.length - 1
-      })
+      } as Breadcrumb)
     })
     
     return breadcrumbs
@@ -93,7 +95,7 @@ export function DashboardHeader() {
                   {index > 0 && (
                     <ChevronRight className="w-4 h-4 text-gray-400 mx-2" />
                   )}
-                  {breadcrumb.isLast ? (
+                  {breadcrumb?.isLast ? (
                     <span className="text-gray-900 font-medium flex items-center gap-1">
                       {breadcrumb.icon && <breadcrumb.icon className="w-4 h-4" />}
                       {breadcrumb.label}
