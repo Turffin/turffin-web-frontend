@@ -2,7 +2,8 @@
 
 import { Card } from "@/components/ui/card"
 import Link from "next/link"
-import { Play, Clock, Users, BookOpen } from "lucide-react"
+import { Play, Clock, Users } from "lucide-react"
+import Image from "next/image"
 
 interface VideoCardProps {
   title: string
@@ -33,9 +34,11 @@ export function VideoCard({
         {/* Video thumbnail area */}
         <div className="relative h-32 bg-muted/50 overflow-hidden">
           {thumbnail ? (
-            <img 
+            <Image 
               src={thumbnail} 
               alt={title}
+              width={100}
+              height={100}
               className="w-full h-full object-cover"
             />
           ) : (

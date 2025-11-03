@@ -24,8 +24,7 @@ import {
   Trophy,
   Calendar,
   ChevronRight,
-  Home,
-  PanelLeft
+  Home
 } from 'lucide-react'
 import { clearToken } from '@/lib/auth'
 import { useRouter, usePathname } from 'next/navigation'
