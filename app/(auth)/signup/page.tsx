@@ -42,6 +42,8 @@ export default function SignupPage() {
   } = useForm({
     resolver: yupResolver(schema),
   });
+  let a = 5;
+  console.log(a)
 
   const onSubmit = async (data: any) => {
     try {
